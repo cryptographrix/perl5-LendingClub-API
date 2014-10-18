@@ -12,7 +12,10 @@ SYNOPSIS
     use Data::Dumper;
 
     # public functions do not require any options
-    my $lcapi_object = new LendingClub::API( "this-is-not-a-real-investor-id", "this-is-not-a-real-key" );
+    my $lcapi_object = new LendingClub::API( 
+        "this-is-not-a-real-investor-id", 
+        "this-is-not-a-real-key" 
+    );
 
     print Dumper( $lcapi_object->available_cash() ) ."\n";
     print Dumper( $lcapi_object->summary() ) ."\n";
